@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import Main from './component/MainComponents';
 import './App.css';
-
+import { BrowserRouter } from 'react-router-dom';
 
 
 // function App() {
@@ -12,7 +12,7 @@ import './App.css';
 //           <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
 //         </div>
 //       </Navbar>
-      
+
 //     </div>
 //   );
 // }
@@ -20,11 +20,12 @@ class App extends Component {
 
   render() {
     return (
-    <div>
-      <Main />
-    </div>
+      <BrowserRouter>
+        <div>
+          <Main />
+        </div>
+      </BrowserRouter>
     );
   }
 }
-
 export default App;
