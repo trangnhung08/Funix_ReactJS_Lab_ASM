@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function RenderSalary({salary}){
     return(
-        <Card className="mt-2 mb-2">
+        <Card className="mt-2 mb-2 bg-light">
             <CardTitle>{salary.name}</CardTitle>
             <CardText className="ml-2">Mã nhân viên: {salary.id}</CardText>
             <CardText className="ml-2">Hệ số lương: {salary.salaryScale}</CardText>
