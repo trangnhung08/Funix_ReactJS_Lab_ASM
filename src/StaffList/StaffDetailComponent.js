@@ -11,12 +11,13 @@ function RenderStaff({ staff }) {
                     <CardImg width="100%" src={staff.image} alt={staff.name} />
                 </div>
                 <div className="col-12 col-md-8 col-lg-3 mt-2 mb-2">
-                    <Card className="mt-4 cardDetail">
+                    <Card className="mt-3 mb-2 cardDetail">
                         <CardTitle >Họ và tên: {staff.name}</CardTitle>
-                        <CardText >Ngày sinh: {dateFormat(staff.doB, "dd/mm/yyyy")}</CardText>
-                        <CardText >Phòng ban: {staff.department.name}</CardText>
-                        <CardText >Số ngày nghỉ còn lại: {staff.annualLeave}</CardText>
-                        <CardText >Số ngày đã làm thêm: {staff.overTime}</CardText>
+                        <CardText ><b>Ngày sinh:</b> {dateFormat(staff.doB, "dd/mm/yyyy")}</CardText>
+                        <CardText ><b>Ngày vào công ty:</b> {dateFormat(staff.startDate, "dd/mm/yyyy")}</CardText>
+                        <CardText ><b>Phòng ban:</b> {staff.department.name}</CardText>
+                        <CardText ><b>Số ngày nghỉ còn lại:</b> {staff.annualLeave}</CardText>
+                        <CardText ><b>Số ngày đã làm thêm:</b> {staff.overTime}</CardText>
                     </Card>
                 </div>
             </div>
@@ -36,7 +37,7 @@ const StaffDetail = (props) => {
                 <div className="row">
                     <div className="ml-3">
                         <Breadcrumb>
-                            <BreadcrumbItem><Link to="/staff"></Link></BreadcrumbItem>
+                            <BreadcrumbItem><Link to="/staff">Nhân Viên</Link></BreadcrumbItem>
                             <BreadcrumbItem active>{props.staff.name}</BreadcrumbItem>
                         </Breadcrumb>
                     </div>

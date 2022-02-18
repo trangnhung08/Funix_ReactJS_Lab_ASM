@@ -26,6 +26,14 @@ const Salary = (props) => {
     return(
         <div className="container">
             <div className="row">
+                <div className="ml-3">
+                    <Breadcrumb>
+                        <BreadcrumbItem><Link to="/staff">Nhân Viên</Link></BreadcrumbItem>
+                        <BreadcrumbItem active>Bảng Lương</BreadcrumbItem>
+                    </Breadcrumb>
+                </div>
+            </div>
+            <div className="row">
                 {salary}
             </div>
         </div>
