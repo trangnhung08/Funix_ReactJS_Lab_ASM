@@ -6,7 +6,7 @@ function RenderDepartment({ department }) {
     return (
         <Card className="mt-2 mb-2">
             <CardTitle>{department.name}</CardTitle>
-            <CardText className="ml-5 mt-2 mb-2">Số lượng nhân viên: {department.numberOfStaff}</CardText>
+            <CardText className="ml-5 mt-2 mb-3">Số lượng nhân viên: {department.numberOfStaff}</CardText>
         </Card>
     );
 }
