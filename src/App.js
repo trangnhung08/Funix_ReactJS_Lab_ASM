@@ -1,32 +1,19 @@
-import logo from './logo.svg';
-import { Navbar, NavbarBrand } from 'reactstrap';
-import { STAFFS } from './shared/staffs';
-import { Component } from 'react';
-import Staffs from './StaffList/StaffListComponent';
+import React, { Component } from 'react';
+import Main from './StaffList/MainComponent';
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
 
-   class App extends Component {
+class App extends Component {
 
-    constructor(props) {
-      super(props);
-
-      this.state = {
-        staffs: STAFFS
-      };
-    }
-
-    render(){
-      return (
+  render() {
+    return (
+      <BrowserRouter>
         <div>
-          <Navbar dark color="primary">
-              <div className='container'>
-                <NavbarBrand href="/" text-white>ỨNG DỤNG QUẢN LÝ NHÂN SỰ V1.0</NavbarBrand>
-              </div>
-          </Navbar>
-          <Staffs staffs = {this.state.staffs} />
+          <Main />
         </div>
-      );
-    }
-   }
+      </BrowserRouter>
+    );
+  }
+}
 
 export default App;
