@@ -7,10 +7,10 @@ function RenderStaff({ staff }) {
     if (staff != null) {
         return (
             <div className="row">
-                <div className="col-12 col-md-4 col-lg-3 mt-2 mb-4">
+                <div className="col-12 col-md-4 col-lg-3 mt-4 ">
                     <CardImg className="img-thumbnail" width="100%" src={staff.image} alt={staff.name} />
                 </div>
-                <div className="col-12 col-md-8 col-lg-3 mt-2 mb-2">
+                <div className="col-12 col-md-8 col-lg-3 mt-2 mb-3">
                     <Card className="mt-3 mb-2 cardDetail">
                         <CardTitle >Họ và tên: {staff.name}</CardTitle>
                         <CardText ><b>Ngày sinh:</b> {dateFormat(staff.doB, "dd/mm/yyyy")}</CardText>
