@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 function RenderListStaff({ staff, onClick }) {
     return (
-        <Card className="mt-1 mb-1">
+        <Card className="mt-1 mb-4">
             <Link to={`/staff/${staff.id}`}>
-                <CardImg src={staff.image} alt={staff.name} />
+                <CardImg className="img-thumbnail" src={staff.image} alt={staff.name} />
                 <CardText className="text-center nameStaff">{staff.name}</CardText>
             </Link>
 
@@ -37,7 +37,7 @@ const Staffs = (props) => {
             <div className="row">
                 {list}
                 <div className="col-12">
-                    <hr />
+                    <hr  className="mt-1"/>
                 </div>
             </div>
         </div>

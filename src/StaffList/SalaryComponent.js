@@ -18,7 +18,7 @@ const Salary = (props) => {
     const salary = props.staffs.map((salary) => {
         return(
             <div className="col-12 col-md-6 col-lg-4" key={salary.id}>
-                <RenderSalary salary={salary} onClick={props.onClick}/>
+                <RenderSalary salary={salary}/>
             </div>
         )
     });
