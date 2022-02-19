@@ -46,6 +46,12 @@ const StaffDetail = (props) => {
                     </div>
                 </div>
                 <RenderStaff staff={props.staff} />
+                <div className="row">
+                    <div className="col-12">
+                        <hr  className="mt-1"/>
+                    </div>
+                </div>
+                
             </div>
         );
 

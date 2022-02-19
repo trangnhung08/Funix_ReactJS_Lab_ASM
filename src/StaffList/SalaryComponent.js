@@ -32,9 +32,15 @@ const Salary = (props) => {
                         <BreadcrumbItem active>Bảng Lương</BreadcrumbItem>
                     </Breadcrumb>
                 </div>
+                <div className="col-12">
+                    <hr  className="mt-1"/>
+                </div>
             </div>
             <div className="row">
                 {salary}
+                <div className="col-12">
+                    <hr  className="mt-1"/>
+                </div>
             </div>
         </div>
     );

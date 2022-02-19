@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 function RenderDepartment({ department }) {
     return (
-        <Card className="mt-2 mb-2 bg-light">
+        <Card className="mt-2 mb-3 bg-light">
             <CardTitle>{department.name}</CardTitle>
-            <CardText className="ml-5 mt-2 mb-3">Số lượng nhân viên: {department.numberOfStaff}</CardText>
+            <CardText className="ml-5 mt-2 mb-4">Số lượng nhân viên: {department.numberOfStaff}</CardText>
         </Card>
     );
 }
@@ -27,9 +27,15 @@ const Department = (props) => {
                         <BreadcrumbItem active>Phòng Ban</BreadcrumbItem>
                     </Breadcrumb>
                 </div>
+                <div className="col-12">
+                    <hr  className="mt-1"/>
+                </div>
             </div>
             <div className="row">
                 {depart}
+                <div className="col-12">
+                    <hr  className="mt-1"/>
+                </div>
             </div>
         </div>
     );
