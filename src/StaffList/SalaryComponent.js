@@ -9,7 +9,7 @@ function RenderSalary({salary}){
             <CardText className="ml-2">Mã nhân viên: {salary.id}</CardText>
             <CardText className="ml-2">Hệ số lương: {salary.salaryScale}</CardText>
             <CardText className="ml-2">Số giờ làm thêm: {salary.overTime}</CardText>
-            <CardText className="ml-4 mr-4 cardSalary">Lương: {parseInt((salary.salaryScale * 3000000) + ((salary.overTime/8) * 200000))}</CardText>
+            <CardText className="ml-4 mr-4 cardSalary">Lương: {parseInt((salary.salaryScale * 3000000) + ((salary.overTime/8) * 200000)).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') + " " + "VNĐ"}</CardText>
         </Card>
     );
 }
