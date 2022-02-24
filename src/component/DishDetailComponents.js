@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardImg, CardText, CardBody, CardTitle, BreadcrumbItem, Breadcrumb } from "reactstrap";
 import dateFormat from "dateformat";
 import { Link } from 'react-router-dom';
+import CommentForm from "./CommentFormComponents";
 
 
 function RenderDish({ dish }) {
@@ -39,7 +40,9 @@ function RenderComments({ comments }) {
                     </ul>
                 )
                 )}
+                <CommentForm />
             </div>
+
         );
     }
     else {
@@ -48,7 +51,6 @@ function RenderComments({ comments }) {
         );
     }
 }
-
 const DishDetail = (props) => {
     if (props.dish != null) {
         return (
